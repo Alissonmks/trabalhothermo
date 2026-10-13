@@ -7,93 +7,23 @@
     <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-    <nav class="menu-container">
-  <!-- Lado Esquerdo: Link de logo corrigido -->
-  
-   <div class="menu-direito">
-  <a href="img/logo.png" class="logo">
-    <img src="img/logo.png" alt="Logo Thermo">
-  </a>
-</div>
+  <div class="container">
+        <h1>Thermo Login</h1>
+        <form class="formulario-login" action="index.html" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-  <!-- Centro: Menu Principal e Submenu -->
-  <ul class="menu-centro">
-    <li><a href="index.html">Início</a></li>
-    <li class="tem-submenu">
-      <a href="produtos.html">produtos</a>
-      <ul class="submenu">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
 
-      </ul>
-    </li>
-    <li><a href="#">Sobre</a></li>
-    <li><a href="#">Contato</a></li>
-  </ul>
-
-  <!-- Lado Direito: login corrigido-->
-
-  <div class="menu-esquerdo">
-    <a href="#login.html" class="link-login">Login</a>
-  </div>
-</nav>
-    
-    
-    <section class="pagina-topo"> 
-<div class="container 
-pagina-topo-grid"> 
-<div> 
-<h1>Thermo</h1> 
-<p>A melhor meneira de garantir sua hydrataçao</p> 
-
-</div> 
-</div> 
-</section> 
-  
-<aside class="login-info">
-    <h2>LOGIN</h2>
-
-
-    <div class="form-grupo">
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" required>
+            <a href="cadastro.html">Não tem uma conta?Cadastre-se</a>
+            <a href="index.html">voltar ao inicio</a>
+        
+            <button type="submit">Entrar</button>
+          
+        </form>
     </div>
+</body> 
 
-<div class="form-grupo">
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" required>
-</div>
-
- <a href="dashboard.html" class="btn-principal">entrar</a>
-  </aside>
-
-   
-  <footer>
-    <div class="rodape-grid">
-
-    <div class="rodape-coluna">
-    <h2>thermo</h2>
-    <p>sua hydrataçao garantida</p>
-    </div>
-
-    <div class="rodape-coluna">
-      <h3>navegaçao</h3>
-      <a href="index.html">inicio</a>
-      <a href="produtos.html">produtos</a>
-      <a href="sobre.html">sobre</a>
-    </div>
-    
-    <div class="rodape-coluna">
-     <h3>contato</h3>
-     <p>porto digital</p>
-     <p>recife PE</p>
-     <p>(81) 3330-444</p>
-    </div>
-
-    </div>
-
-    <div  class="copyright">
-      projeto-thermo-janio
-    </div>
-  </footer>
-  
 </body>
 </html>
