@@ -13,6 +13,22 @@ h1, h2, h3, h4, h5, h6{
 body {
    background: linear-gradient(135deg, #1b223c, #0c0b2d)
 }
+body.tema-escuro {
+--creme: #1d1714;
+--branco: #2a211d;
+--texto: #f6eee8;
+--cinza: #c8bbb3;
+}
+
+.voltar-topo {
+position: fixed;
+right: 20px;
+bottom: 20px;
+display: none;
+}
+.voltar-topo.visivel {
+display: block;
+}
 
 
 .menu-container {
@@ -26,7 +42,6 @@ body {
 
 }
 
-/* Links básicos */
 .menu-container a {
   color: #ece7e6;
   text-decoration: none;
@@ -39,7 +54,6 @@ body {
   background-color: #415aaf;
 }
 
-/* Centralização do menu */
 .menu-centro {
   display: flex;
   list-style: none;
@@ -499,7 +513,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 .formulario-cadastro button:hover{
   background-color: #2e3b8f;}
 
-.formulario-login{
+.formgrupo{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -509,17 +523,17 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin: 20px;
   border-radius: 8px;
-  height: 300px;
+  height: 500px;
   width: 400px;
 
 }
-.formulario-login input{
+.formgrupo input{
   padding: 12px;
   width: 100%;
   border-radius: 8px;
 }
 
-.formulario-login button{
+.formgrupo button{
   padding: 12px;
   background-color: #415aaf;
   color: #ece7e6;
@@ -528,7 +542,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
   font-weight: bold;
 }
-.formulario-login button:hover{
+.formgrupo button:hover{
   background-color: #2e3b8f;
 }
 
@@ -545,13 +559,13 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 .comprar-button:hover{
   background-color: #2e3b8f;
 }
-.formulario-login label{
+.formgrupo label{
   color: #ece7e6;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.formulario-login a{
+.formgrupo a{
   color: #3d47da;
   text-decoration: none;
 }
@@ -565,5 +579,103 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 .formulario-cadastro a{
   color: #3d47da;
   text-decoration: none;
+}
+
+.carrinho-painel {
+position: fixed;
+right: 0;
+transform: translateX(100%);
+}
+
+.carrinho-aberto {
+transform: translateX(0);
+}
+
+@media (max-width: 620px) {
+.menu-toggle {
+display: block;
+}
+#menuPrincipal {
+display: none;
+width: 100%;
+}
+#menuPrincipal.aberto {
+display: block;
+}}
+
+.modal-overlay {
+display: none;
+position: fixed;
+inset: 0;
+background: rgba(214, 193, 193, 0.55);
+place-items: center;
+}
+.modal-overlay.aberto {
+display: grid;
+}
+
+.carrinho-overlay {
+position: fixed;
+inset: 0;
+background: rgba(12, 5, 5, 0.45);
+opacity: 0;
+visibility: hidden;
+transition: 0.25s;
+z-index: 80;
+}
+.carrinho-overlay.aberto {
+opacity: 1;
+visibility: visible;
+}
+.carrinho-painel {
+position: fixed;
+top: 0;
+right: 0;
+width: min(420px, 92vw);
+height: 100vh;
+background-color: rgb(88, 89, 100);
+padding: 24px;
+transform: translateX(100%);
+transition: transform 0.3s ease;
+z-index: 90;
+overflow-y: auto;
+}
+.carrinho-painel.aberto {
+transform: translateX(0);
+}
+.carrinho-item {
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 12px;
+padding: 14px 0;
+border-bottom: 1px solid #bdb7b7;
+}
+.carrinho-controles {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.carrinho-resumo {
+display: flex;
+justify-content: space-between;
+margin: 20px 0;
+font-size: 18px;
+}
+
+.toast {
+position: fixed;
+right: 20px;
+bottom: 20px;
+background: #2f7d4a;
+color: white;
+padding: 12px 18px;
+border-radius: 10px;
+opacity: 0;
+transform: translateY(15px);
+transition: 0.25s;
+}
+.toast.visivel {
+opacity: 1;
+transform: translateY(0);
 }
 

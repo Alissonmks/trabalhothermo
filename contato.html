@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Style.css">
     <title>Contato</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/formularios.js" defer></script>
 </head>
 <body>
       <nav class="menu-container">
@@ -27,8 +29,6 @@
     <li><a href="contato.html">Contato</a></li>
   </ul>
 
-  
-
   <div class="menu-esquerdo">
     <a href="login.html" class="link-login">Entrar / Login</a>
   </div>
@@ -37,13 +37,16 @@
     <aside class="contato-info">
         <h2>Entre em contato conosco para mais informações sobre nossos produtos e serviços. Estamos aqui para ajudar!</h2>
         <div class="contato-items">
-         <strong>Email:</strong> contato@thermo.com
-            <strong>Telefone:</strong> (11) 1234-5678
-            <strong>Endereço:</strong> Rua Exemplo, 123, recife, PE
+        <strong>Email:</strong> contato@thermo.com
+        <strong>Telefone:</strong> (11) 1234-5678
+        <strong>Endereço:</strong> Rua Exemplo, 123, recife, PE
         <div>
-
     </aside>
       
+    <form class="form-area" id="formContato">
+
+    </form>
+<div id="toast" class="toast" role="status"></div>
     <div class="formulario-contato-container">
       <form class="formulario-contato">
 
@@ -55,19 +58,19 @@
          id="email-contato">
 
       
-        <label for="assunto">assunto</label>
-        <select id="assunto">
+        <label for="assunto" >assunto</label>
+
+      <select id="assunto">
         <option value="duvida">duvida</option>
-         
          <option value="">pedidos</option>
-         </select>
+      </select>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea name="" id="mensagem"></textarea>
+      <label for="mensagem">Mensagem</label>
+      <textarea name="" id="mensagem"></textarea>
+      <button type="submit">Enviar mensagem</button><br>
 
-             <button type="submit">Enviar mensagem</button><br>
-            </form>
-        </div>
+      </form>
+    </div>
        
 
 <footer>
@@ -98,6 +101,6 @@
       projeto-thermo-janio
     </div>
   </footer>
-     
+     <button id="voltarTopo" class="voltar-topo" type="button">Topo</button>
 </body>
 </html>
