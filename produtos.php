@@ -12,11 +12,6 @@
  </head>
 <body> 
   
-<button class="menu-toggle" id="menuToggle"
-aria-controls="menuPrincipal"
-aria-expanded="false">
-Menu
-</button>
 <nav class="menu-container" id="menuPrincipal">
 
 <div class="menu-direito">

@@ -1,10 +1,12 @@
-PROJETO THERMO 
+## PROJETO THERMO 
 
 WEB-SITE FOCADO EM VENDAS DE GARRAFAS TERMICAS
 ================================================================
-desenvolvedor= Janio Alisson santos de oliveira
+## desenvolvedor= Janio Alisson santos de oliveira
+
+link projeto: https://github.com/Alissonmks/trabalhothermo (control e clique pra abri o link)
 ================================================================
-sobre o projeto
+## sobre o projeto
 
 porque um site de garrafas termicas?
 - bom mais comum que possa parecer, a necessidade real de se ultizar essas garrafas termicas e muito grander
@@ -16,7 +18,7 @@ ao serem compradas 1 vez Nao teram a necessidade de toda vez que sair de casa te
 por 2 reais ou talvez mais que isso
 ================================================================
 
-funcionalidades
+## funcionalidades
 o sistema de cadastro: esta enviando pro banco de dados atravez da conexao do php e banco de dados
 
 o sistema de login: ta buscando ao my sql pra fazer login
@@ -30,12 +32,24 @@ produtos: atualmente tem 3 produtos que sao
 
 formulario de contato: ainda Nao esta completo faltando a implementaçao do php nele 
 ================================================================
-tecnologias usadas
+## tecnologias usadas
 Html 5
 css 
 javaScript
 PHP
 Mysql
 ================================================================
-como usar
-o projeto pode ser aberto em local-host com um 
+
+## Como rodar
+1. Instale o XAMPP e ligue Apache e MySQL.
+2. Copie a pasta `projeto` para `C:\xampp\htdocs`.
+3. No phpMyAdmin, importe `database/projeto.sql`.
+4. Acesse http://localhost/projeto
+=================================================================
+## Usuário de teste
+- E-mail: mikla@gmail.com
+- Senha: Miklaus4324 
+================================================================
+
+Projeto do curso técnico em Desenvolvimento de Sistemas —
+ETE Porto Digital, 2026.
