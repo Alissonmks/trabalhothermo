@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thermo</title>
-    <link rel="stylesheet" href="css/Style.css">
-
-    
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
 
@@ -20,19 +19,21 @@
 </div>
 
   <ul class="menu-centro">
-    <li><a href="index.html">Início</a></li>
+    <li><a href="index.php">Início</a></li>
     <li class="tem-submenu">
-      <a href="produtos.html">produtos</a>
+      <a href="produtos.php">produtos</a>
       
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="contato.html">Contato</a></li>
+    <li><a href="dashboard.php">Dashboard</a></li>
+    <li><a href="sobre.php">Sobre</a></li>
+    <li><a href="contato.php">Contato</a></li>
+    <li> <button id="btn-tema" type="button">☀️</button></li>
+   
   </ul>
 
 
 
   <div class="menu-esquerdo">
-    <a href="login.html" class="link-login">Entrar / Login</a>
+    <a href="login.php" class="link-login">Entrar / Login</a>
   </div>
 </nav>
 
@@ -43,7 +44,7 @@
         <p>Entendendo a thermo</p>
         </div>
         <div class="hero-acoes">
-        <a href="produtos.html" class="button">
+        <a href="produtos.php" class="button">
           <button class="btn-principal">Ver Produtos</button>
         </a>
         </div>

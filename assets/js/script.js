@@ -22,13 +22,20 @@ menuToggle.setAttribute("aria-expanded", aberto);
 });
 }
 
-const temaSalvo = localStorage.getItem("tema");
-if (temaSalvo === "escuro") {
-document.body.classList.add("tema-escuro");
-}
-botaoTema?.addEventListener("click", () => {
-document.body.classList.toggle("tema-escuro");
-const escuro = document.body.classList.contains("tema-escuro");
-localStorage.setItem("tema", escuro ? "escuro" : "claro");
-});
+const botaoTema = document.getElementById('btn-tema');
+const htmlElement = document.documentElement;
 
+// 1. Verifica se o usuário já salvou uma preferência antes
+const temaSalvo = localStorage.getItem('tema');
+if (temaSalvo) {
+  htmlElement.setAttribute('data-theme', temaSalvo);
+}
+
+// 2. Alterna o tema ao clicar no botão
+botaoTema.addEventListener('click', () => {
+  const temaAtual = htmlElement.getAttribute('data-theme');
+  const novoTema = temaAtual === 'dark' ? 'light' : 'dark';
+
+  htmlElement.setAttribute('data-theme', novoTema);
+  localStorage.setItem('tema', novoTema); // Salva a escolha
+});

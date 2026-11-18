@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sobre</title>
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="assets/css/Style.css">
 </head>
 <body>
     <nav class="menu-container">
@@ -17,18 +17,18 @@
 </div>
 
   <ul class="menu-centro">
-    <li><a href="index.html">Início</a></li>
+    <li><a href="index.php">Início</a></li>
     <li class="tem-submenu">
-      <a href="produtos.html">produtos</a>
+      <a href="produtos.php">produtos</a>
       
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="contato.html">Contato</a></li>
+    <li><a href="dashboard.php">Dashboard</a></li>
+    <li><a href="sobre.php">Sobre</a></li>
+    <li><a href="contato.php">Contato</a></li>
   </ul>
 
 
   <div class="menu-esquerdo">
-    <a href="login.html" class="link-login">Entrar / Login</a>
+    <a href="login.php" class="link-login">Entrar / Login</a>
   </div>
 </nav>
 <section class="pagina-topo">

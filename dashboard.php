@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="assets/css/Style.css">
     <title>Dashboard</title>
 </head>
 <body>
         <nav class="menu-container">
 
    <div class="menu-direito">
-  <a href="index.html" class="logo">
+  <a href="index.php" class="logo">
     <img src="img/logo.png" alt="Logo Thermo">
   </a>
    </div>
 
   <ul class="menu-centro">
-    <li><a href="index.html">Início</a></li>
+    <li><a href="index.php">Início</a></li>
     <li class="tem-submenu">
-      <a href="produtos.html">produtos</a>
+      <a href="produtos.php">produtos</a>
       
-    <li><a href="dashboard.html">Dashboard</a></li>
-    <li><a href="sobre.html">Sobre</a></li>
-    <li><a href="contato.html">Contato</a></li>
+    <li><a href="dashboard.php">Dashboard</a></li>
+    <li><a href="sobre.php">Sobre</a></li>
+    <li><a href="contato.php">Contato</a></li>
+    <li><a href="perfil.php">perfil</a></li>
   </ul>
 
 
   <div class="menu-esquerdo">
-    <a href="login.html" class="link-login">Entrar / Login</a>
+    <a href="login.php" class="link-login">Entrar / Login</a>
   </div>
 </nav>
 <section class="pagina-topo">
