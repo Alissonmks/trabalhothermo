@@ -18,4 +18,7 @@ terminar o root no css(modo claro/escuro)
 
 criado a pasta public  e a pasta app  com seus arquivos
 
-deixei o perfil id como nulo
+## adicionado 
+
+public admin a parte dos usuario e usuario 
+inplementado a parte do app

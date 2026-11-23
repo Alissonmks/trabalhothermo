@@ -507,8 +507,8 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin: 20px;
   border-radius: 8px;
-  height: 600px;
-  width: 400px;
+  height: 700px;
+  width: 500px;
 
 }
 .formgrupo input{
@@ -663,3 +663,6 @@ opacity: 1;
 transform: translateY(0);
 }
 
+.dashboard{
+  font-size: 40px;
+}

@@ -44,10 +44,9 @@ $cpf_mascarado = substr($cpf, 0, 4) . "***.***-" . substr($cpf, -2);
 </nav>
 <div class="container">
   <h2>Olá, <?php echo htmlspecialchars($_SESSION['usuario_nome']); ?></h2>
-...
-<p><strong>E-mail:</strong> <?php echo htmlspecialchars($email_mascarado); ?>
+<p class="dashboard"><strong>E-mail:</strong> <?php echo htmlspecialchars($email_mascarado); ?>
 </p>
-<p><strong>CPF:</strong> <?php echo htmlspecialchars($cpf_mascarado); ?></p>
-<p><strong>Tel:</strong> <?php echo
+<p class="dashboard"><strong>CPF:</strong> <?php echo htmlspecialchars($cpf_mascarado); ?></p>
+<p class="dashboard"><strong>Tel:</strong> <?php echo
 htmlspecialchars($_SESSION['usuario_telefone']); ?></p>
 </div>
