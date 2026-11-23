@@ -39,3 +39,44 @@ botaoTema.addEventListener('click', () => {
   htmlElement.setAttribute('data-theme', novoTema);
   localStorage.setItem('tema', novoTema); // Salva a escolha
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+const inputCPF = document.getElementById('cpf');
+const inputTel = document.getElementById('telefone');
+const form = document.querySelector('form');
+const senha = document.getElementById('senha');
+const confirmaSenha = document.getElementById('confirma_senha');
+
+inputCPF?.addEventListener('input', (e) => {
+let v = e.target.value.replace(/\D/g, '');
+v = v.replace(/(\d{3})(\d)/, '$1.$2')
+.replace(/(\d{3})(\d)/, '$1.$2')
+.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+e.target.value = v;
+});
+
+inputTel?.addEventListener('input', (e) => {
+let v = e.target.value.replace(/\D/g, '');
+v = v.replace(/^(\d{2})(\d)/g, '($1) $2')
+.replace(/(\d{5})(\d)/, '$1-$2');
+e.target.value = v;
+});
+
+form?.addEventListener('submit', (e) => {
+
+if (senha && confirmaSenha && senha.value !== confirmaSenha.value) {
+e.preventDefault();
+alert('As senhas não coincidem!');
+return;
+}
+
+if (window.location.pathname.includes('perfil.php')) {
+if (!confirm("Deseja salvar as alterações no telefone?"))
+
+e.preventDefault();
+
+}
+});
+});

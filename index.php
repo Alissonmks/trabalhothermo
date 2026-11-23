@@ -29,9 +29,6 @@
     <li> <button id="btn-tema" type="button">☀️</button></li>
    
   </ul>
-
-
-
   <div class="menu-esquerdo">
     <a href="login.php" class="link-login">Entrar / Login</a>
   </div>

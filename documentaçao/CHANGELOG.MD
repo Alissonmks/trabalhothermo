@@ -15,3 +15,7 @@ deixar a pagina de compra do carrinhos mais bonita: incompleto
 ## lembretes 
 
 terminar o root no css(modo claro/escuro)
+
+criado a pasta public  e a pasta app  com seus arquivos
+
+deixei o perfil id como nulo

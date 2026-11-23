@@ -415,42 +415,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
 }
 
-.formulario-cadastro{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: var(--fundo-card);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--texto);
-  padding: 20px;
-  margin: 20px;
-  border-radius: 8px;
-}
-.forms-cadastro input{
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-.forms-cadastro button{
-  padding: 12px;
-  background-color:var(--destaque) ;
-  color: var(--texto);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
 
-.forms-cadastro button:hover{
-  background-color: var(--destaque-hover);
-}
-.forms-cadastro label{
-  color:var(--texto);
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 .contato-items{
   display: flex;
   flex-direction: column;
@@ -542,7 +507,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin: 20px;
   border-radius: 8px;
-  height: 500px;
+  height: 600px;
   width: 400px;
 
 }
