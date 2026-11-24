@@ -32,9 +32,7 @@ foreach ($env as $chave => $nome) {
 $v = getenv($nome);
 if ($v !== false) $padroes[$chave] = $v;
 }
-// Compatibilidade com WampServer/XAMPP NOVOS: root sem senha apenas
-// para acesso DIRETO em localhost, sem configuração explícita.
-// Não habilitar em servidores públicos, reverse proxies ou produção.
+
 $remote = (string)($_SERVER['REMOTE_ADDR'] ?? '');
 $hostCabecalho = strtolower((string)($_SERVER['HTTP_HOST'] ?? ''));
 $localDireto = in_array($remote, ['127.0.0.1','::1'], true)

@@ -26,7 +26,7 @@ if (($_POST['confirmar'] ?? '') !== 'SIM') {
 throw new InvalidArgumentException('Confirmação obrigatória.');
 }
 $pdo->beginTransaction();
-// Mesmo bloqueio utilizado na rotina administrativa original.
+
 $pdo->query("SELECT id FROM perfis WHERE codigo='ADMIN' FOR UPDATE")
 ->fetchColumn();
 $sql = 'SELECT u.id, u.status, p.codigo AS perfil FROM usuarios u'

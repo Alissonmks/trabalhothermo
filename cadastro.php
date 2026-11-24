@@ -56,7 +56,7 @@ $erro = "E-mail ou CPF já cadastrados.";
             <input type="password" id="senha" placeholder="Digite sua senha" name="senha" required>
 
              <label>Confirmar</label>
-             <input type="password" id="confirma_senha" name="confirma_senha" required>
+             <input type="password" id="confirma_senha" placeholder="Confirme senha" name="confirma_senha" required>
             
               <a href="login.php">volta ao login</a>
 

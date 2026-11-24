@@ -1,6 +1,10 @@
 <?php
-require_once 'includes/config.php';
-require_once 'includes/funcoes.php';
+session_start();
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: ../../login.php");
+    exit;
+}
+require_once __DIR__ . '/../../includes/funcoes.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -8,9 +12,25 @@ require_once 'includes/funcoes.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Produto</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/Style.css">
 </head>
 <body>
+    <nav class="menu-container">
+        <div class="menu-direito">
+            <a href="../index.php" class="logo">
+                <img src="../../img/logo.png" alt="Logo Thermo">
+            </a>
+        </div>
+        <ul class="menu-centro">
+            <li><a href="cadastrar_produto.php">Cadastrar Produto</a></li>
+             <li><a href="consulta.php">Consultar Estoque</a></li>
+             <li><a href="../../produtos.php">Ver Loja (Cliente)</a></li>
+            <li><a href="../../dashboard.php">Minha Conta</a></li>
+        </ul>
+        <div class="menu-esquerdo">
+            <a href="../../logout.php" class="link-login">Sair</a>
+        </div>
+    </nav>
     <header class="topo">
         <h1>➕ Cadastrar Produto</h1>
         <p>Preencha os dados e clique em <strong>Salvar</strong></p>
@@ -135,9 +155,9 @@ require_once 'includes/funcoes.php';
     </main>
 
     <footer class="rodape">
-        ETE PORTO DIGITAL THERMO 
+        THERMO 
     </footer>
 
-       <script src="assets/js/cadastro.js"></script>
+       <script src="../../assets/js/cadastro.js"></script>
 </body>
 </html>

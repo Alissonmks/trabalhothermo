@@ -36,9 +36,9 @@ $cpf_mascarado = substr($cpf, 0, 4) . "***.***-" . substr($cpf, -2);
     <li><a href="contato.php">Contato</a></li>
      <li><a href="perfil.php">perfil</a></li>
     <li> <button id="btn-tema" type="button">☀️</button></li>
-   
-  </ul>
+    </ul>
   <div class="menu-esquerdo">
+    <a href="logout.php" class="link-login">Sair / Logout</a>
     <a href="login.php" class="link-login">Entrar / Login</a>
   </div>
 </nav>

@@ -1,6 +1,7 @@
 <?php
 session_start();
-require_once 'includes/config.php';
+require_once __DIR__ . '/app/conexao.php';
+$pdo = thermoConexao();
 $erro = "";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 // 1) Procura o usuário pelo e-mail digitado
