@@ -4,13 +4,13 @@ require_once __DIR__ . '/app/conexao.php';
 $pdo = thermoConexao();
 $erro = "";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-// 1) Procura o usuário pelo e-mail digitado
+
 $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
 $stmt->execute([$_POST['email']]);
 $u = $stmt->fetch();
-// 2) Usuário existe E a senha confere com o hash guardado?
+
 if ($u && password_verify($_POST['senha'], $u['senha_hash'])) {
-// 3) Guarda os dados na sessão (ficam disponíveis em outras páginas)
+
 $_SESSION['usuario_id'] = $u['id'];
 $_SESSION['usuario_nome'] = $u['nome'];
 $_SESSION['usuario_email'] = $u['email'];

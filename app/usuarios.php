@@ -55,7 +55,7 @@ if ($id!==null && $id===$autor && ($perfil!=='ADMIN'||$status!=='ATIVO')) throw 
 permitido retirar o próprio acesso administrativo.');
 $pdo->beginTransaction();
 try {
-// Serializa mudanças administrativas ao bloquear a linha de perfil ADMIN.
+
 $pdo->query("SELECT id FROM perfis WHERE codigo='ADMIN' FOR UPDATE")->fetchColumn();
 $perfilId=$pdo->prepare("SELECT id FROM perfis WHERE codigo=? AND status='ATIVO' LIMIT 1");
 $perfilId->execute([$perfil]);

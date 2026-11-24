@@ -24,8 +24,6 @@ if(formlogin){
     });
 }
 
-
-
 function mostrarToast(mensagem) {
 const toast = document.querySelector("#toast");
 if (!toast) return;

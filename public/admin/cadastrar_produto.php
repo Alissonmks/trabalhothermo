@@ -17,7 +17,7 @@ require_once __DIR__ . '/../../includes/funcoes.php';
 <body>
     <nav class="menu-container">
         <div class="menu-direito">
-            <a href="../index.php" class="logo">
+            <a href="index.php" class="logo">
                 <img src="../../img/logo.png" alt="Logo Thermo">
             </a>
         </div>

@@ -38,7 +38,7 @@ $hostCabecalho = strtolower((string)($_SERVER['HTTP_HOST'] ?? ''));
 $localDireto = in_array($remote, ['127.0.0.1','::1'], true)
 && in_array($hostCabecalho, ['localhost','localhost:80','127.0.0.1','127.0.0.1:80','[::1]','[::1]:80'], true);
 if ($padroes['user'] === '' && !is_file($arquivo)
-&& getenv('PADARIA_DB_USER') === false && $localDireto) {
+&& getenv('THERMO_DB_USER') === false && $localDireto) {
 $padroes['user'] = 'root';
 }
 return $padroes;
