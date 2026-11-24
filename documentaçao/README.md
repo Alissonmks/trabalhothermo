@@ -1,5 +1,6 @@
-## PROJETO THERMO 
+# PROJETO FEITO COM O MATERIAL DO PROFESSOR LUIZ COM AJUSTES AO MEU PROJETO
 
+## PROJETO THERMO 
 WEB-SITE FOCADO EM VENDAS DE GARRAFAS TERMICAS
 ================================================================
 ## desenvolvedor= Janio Alisson santos de oliveira
@@ -43,13 +44,11 @@ Mysql
 ## Como rodar
 1. Instale o XAMPP e ligue Apache e MySQL.
 2. Copie a pasta `projeto` para `C:\xampp\htdocs`.
-3. No phpMyAdmin, importe `database/projeto.sql`.
+3. No phpMyAdmin, importe `database/thermo_v2banco`.
 4. Acesse http://localhost/projeto
 =================================================================
 ## Usuário de teste
-- E-mail: mikla@gmail.com
-- Senha: Miklaus4324 
+- E-mail:  marco34@gmail.com
+- Senha: marco23t
 ================================================================
 
-Projeto do curso técnico em Desenvolvimento de Sistemas —
-ETE Porto Digital, 2026.

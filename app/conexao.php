@@ -1,11 +1,7 @@
 <?php
 declare(strict_types=1);
-/**
-* Conexão única PDO. Variáveis PADARIA_DB_* têm prioridade;
-* como alternativa local, configurações privadas em app/config.local.php.
-* Nunca inclua o arquivo local (senhas) no ZIP compartilhado.
-*/
-function padariaConfiguracao(): array
+
+function thermoConfiguracao(): array
 {
 $padroes = [
 'host' => '127.0.0.1',
@@ -27,8 +23,8 @@ $padroes[$chave] = (string) $local[$chave];
 }
 $env = [
 'host' => 'localhost',
-'port' => 'THERMO_DB_NAME',
-'database' => 'PADARIA_DB_NAME',
+'port' => 'THERMO_DB_PORT',
+'database' => 'THERMO_DB_NAME',
 'user' => 'THERMO_DB_USER',
 'password' => 'THERMO_DB_PASSWORD',
 ];
@@ -49,9 +45,9 @@ $padroes['user'] = 'root';
 }
 return $padroes;
 }
-function padariaConexao(): PDO
+function thermoConexao(): PDO
 {
-$conf = padariaConfiguracao();
+$conf = thermoConfiguracao();
 if (trim($conf['user']) === '') {
 throw new RuntimeException('Usuário do banco não configurado. Consulte README.md.');
 }
@@ -75,4 +71,8 @@ PDO::ATTR_EMULATE_PREPARES => false,
 } catch (PDOException $e) {
 throw new RuntimeException('Conexão MySQL indisponível. Verifique host, usuário, senha e banco.', 0, $e);
 }
+}
+function conectar_ou_parar(): PDO
+{
+    return thermoConexao();
 }

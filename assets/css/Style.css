@@ -666,3 +666,147 @@ transform: translateY(0);
 .dashboard{
   font-size: 40px;
 }
+
+.topo {
+  background-color: var(--fundo-menu);
+  padding: 24px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--borda);
+}
+
+.topo h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.link-voltar {
+  color: var(--texto-suave);
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.link-voltar:hover {
+  color: var(--destaque);
+}
+
+.cartao {
+  background: var(--pagina-fundo);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 24px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cartao fieldset {
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.cartao legend {
+  font-weight: bold;
+  padding: 0 8px;
+  color: var(--texto-suave);
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.campo-largo {
+  grid-column: span 2;
+}
+
+.campo label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+  color: var(--texto);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--borda);
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--texto);
+  font-size: 14px;
+}
+
+.campo select option {
+  background-color: #1e2540;
+  color: #ece7e6;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--destaque);
+}
+
+.campo-check {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.campo-check input {
+  width: auto;
+}
+
+.acoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.botao {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: var(--destaque);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.botao:hover {
+  background-color: var(--destaque-hover);
+}
+
+.botao-neutro {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.botao-neutro:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.escondido {
+  display: none;
+}
+
+.rodape {
+  text-align: center;
+  padding: 16px;
+  color: var(--texto-suave);
+  font-size: 14px;
+}

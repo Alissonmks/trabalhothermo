@@ -9,7 +9,7 @@
 4. Clique em **Novo** e crie o banco `banco-thermo`
 (agrupamento `utf8mb4_general_ci`).
 5. Com o banco selecionado, vá em **Importar** e escolha
-`database/banco-thermo.sql`. Clique em **Executar**.
+`database/thermo_bancov2`. Clique em **Executar**.
 6. Abra `config/conexao.php` e confira os dados de acesso.
 7. Acesse http://localhost/cantinaweb
 ## Configuração (config/conexao.php)

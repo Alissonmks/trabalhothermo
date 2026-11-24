@@ -22,3 +22,9 @@ criado a pasta public  e a pasta app  com seus arquivos
 
 public admin a parte dos usuario e usuario 
 inplementado a parte do app
+
+### Cadastro de produto feito 
+adiconado as paginas
+=== cadastro_produto.php===
+=== funcoes.php===
+== 
